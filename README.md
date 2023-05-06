@@ -1,5 +1,5 @@
 # Data-Cleaning-using-SQL-project
-The Data Cleaning using SQL project for Sales of Housing(NashvilleHousing market) Data involves several skills that are essential for cleaning and transforming data. The project aims to convert the SaleDate column to a Date type, populate Property Address data that is null, break out Address into individual columns (Address, City, State), change Y and N to Yes and No in the "Sold as Vacant" field, remove duplicates using windowing functions such as row number, use CTE to remove duplicates finally, and delete unused columns.
+The Data Cleaning using SQL project for Sales of Housing(NashvilleHousing market) Data involves several skills that are essential for cleaning and transforming data. The project aims to convert the SaleDate column to a Date type, populate Property Address data that is null, break out Address into individual columns (Address, City, State), change Y and N to Yes and No in the "Sold as Vacant" field, remove duplicates finally, and delete unused columns.
 
 To begin with, the SaleDate column needs to be converted to a Date type. This conversion will make the data more readable and useful. To do this, we can use the CAST or CONVERT function in SQL Server.
 
