@@ -1,16 +1,10 @@
 # Data-Cleaning-using-SQL-project
-The Data Cleaning using SQL project for Sales of Housing(NashvilleHousing market) Data involves several skills that are essential for cleaning and transforming data. The project aims to convert the SaleDate column to a Date type, populate Property Address data that is null, break out Address into individual columns (Address, City, State), change Y and N to Yes and No in the "Sold as Vacant" field, remove duplicates finally, and delete unused columns.
+Data cleaning is a critical process in data analysis. This project focuses on data cleaning using SQL (Microsoft SQL Server) on the Nashville Housing Market dataset. The project involves several essential skills such as converting data types, populating null values, breaking out columns, changing values using case when statements, removing duplicates, and deleting unused columns.
 
-To begin with, the SaleDate column needs to be converted to a Date type. This conversion will make the data more readable and useful. To do this, we can use the CAST or CONVERT function in SQL Server.
+The project aims to enhance your data analysis skills by demonstrating how to clean and transform data using SQL. The first step involves converting the SaleDate column to a Date type using CAST or CONVERT function. Next, we populate Property Address data that is null by using a self join to compare duplicated records and use an update statement to update null values. We also break out Address into individual columns (Address, City, State) to make the data more structured and organized.
 
-Next, we need to populate Property Address data that is null by using duplicated records. We can use the UPDATE statement with a subquery that selects the first record with a non-null address.
+Another important step is changing Y and N to Yes and No in the "Sold as Vacant" field. We can use distinct values to know what values exist in this field and then use an update statement with case when condition to replace them.
 
-After this step, we need to break out Address into individual columns (Address, City, State) using substring and charindex functions. We can also use parsename and replace functions to extract specific parts of the address.
+We also remove duplicates from the dataset using windowing functions such as RowNumber along with CTEs (Common Table Expressions) to identify duplicate records and remove them from our dataset. Finally, we delete unused columns to make the data more concise and streamlined.
 
-The "Sold as Vacant" field contains Y and N values that need to be changed to Yes and No for accuracy. We can use distinct values to know what values exist in this field and then use case when statements to replace them.
-
-Removing duplicates is another important step in data cleaning. We can use windowing functions such as row number along with CTEs (Common Table Expressions) to identify duplicate records and remove them from our dataset.
-
-Finally, we need to delete unused columns from our dataset. This will make our data more manageable and easier to work with.
-
-In conclusion, Data Cleaning using SQL is an essential skill for anyone working with large datasets. By following these steps outlined above for Sales Housing Data project in Microsoft SQL Server environment , we can transform raw data into clean and usable data that can be used for analysis and decision-making.
+By following the step-by-step instructions, code snippets, and examples of SQL queries provided in this project, you can enhance your data analysis skills and make your data more useful for further analysis. This project is a valuable resource for anyone interested in data cleaning and transformation 
